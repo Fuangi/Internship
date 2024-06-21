@@ -154,3 +154,50 @@ option {
     font-size: 14px;
   }
 }
+
+/* THE TABLE TO VIEW ALL THE REGISTERED INTERNS */
+
+.interns {
+  text-align: center;
+
+  & .sort {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    & button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      background-color: rgba(181, 55, 97, 0.9);
+      border-radius: 5px;
+      color: white;
+
+      &:last-child {
+        width: 200px;
+      }
+    }
+  }
+
+  & .interns-table {
+    border: 1px solid grey;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  & td {
+    padding: 15px;
+  }
+
+  & tr {
+    & th {
+      font-size: 16px;
+    }
+  }
+}
+
+.sort {
+  display: flex;
+  gap: 20px;
+}

@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Homepage from "./components/Homepage";
-import "./index.css";
+import "./index.scss";
+import View from "./components/View";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
 
-        <Route path="view-all" element={<p>View All</p>} />
+        <Route path="interns" element={<View />} />
       </Routes>
     </BrowserRouter>
   );
