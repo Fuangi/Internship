@@ -20,7 +20,8 @@ function View() {
 
   function handleSort(field) {
     axios({
-      url: `http://localhost:4000/internship/?sort=${field}`,
+      // url: `http://localhost:4000/internship/?sort=${field}`,
+      url: `https://internship-backend-ediw.onrender.com/?sort=${field}`,
       method: "get",
     })
       .then(function (res) {
