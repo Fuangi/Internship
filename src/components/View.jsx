@@ -7,7 +7,8 @@ function View() {
   useEffect(function () {
     axios({
       method: "GET",
-      url: "http://localhost:4000/internship",
+      url: "https://internship-backend-ediw.onrender.com",
+      // url: "http://localhost:4000/internship",
     })
       .then(function (res) {
         setInterns(res.data.data.interns);
