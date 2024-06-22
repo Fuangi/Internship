@@ -23,7 +23,7 @@ function View() {
       method: "get",
     })
       .then(function (res) {
-        setInterns(res.data.data.projects);
+        setInterns(res.data.data.interns);
       })
       .catch(function (error) {
         console.log(error);
@@ -35,14 +35,20 @@ function View() {
       <h2>All Registered Interns</h2>
 
       <div className="sort">
-        <button onClick={() => handleSort("level")} className="onDownload">
-          Sort By Level
+        <button onClick={() => handleSort("name")} className="onDownload">
+          Sort By Name
         </button>
         <button onClick={() => handleSort("specialty")} className="onDownload">
           Sort By Specialty
         </button>
-        <button onClick={() => handleSort("supervisor")} className="onDownload">
-          Sort By Supervisor
+        <button onClick={() => handleSort("school")} className="onDownload">
+          Sort By School
+        </button>
+        <button onClick={() => handleSort("gpa")} className="onDownload">
+          Sort By GPA
+        </button>
+        <button onClick={() => handleSort("hub")} className="onDownload">
+          Sort By Chosen Hub
         </button>
         <button onClick={() => window.print()} className="onDownload">
           Download

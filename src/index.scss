@@ -160,6 +160,11 @@ option {
 .interns {
   text-align: center;
 
+  & h2 {
+    font-size: 35px;
+    font-weight: 500;
+  }
+
   & .sort {
     display: flex;
     gap: 20px;
@@ -181,6 +186,7 @@ option {
 
   & .interns-table {
     border: 1px solid grey;
+    border-collapse: collapse;
     width: 90%;
     margin: auto;
     margin-top: 15px;
@@ -193,6 +199,9 @@ option {
   & tr {
     & th {
       font-size: 16px;
+      padding: 5px;
+      background-color: rgba(181, 55, 97, 0.9);
+      color: white;
     }
   }
 }
@@ -200,4 +209,12 @@ option {
 .sort {
   display: flex;
   gap: 20px;
+}
+
+// Remove those buttons on the download screen
+
+@media print {
+  .onDownload {
+    display: none;
+  }
 }

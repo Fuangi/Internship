@@ -8,10 +8,9 @@ function Register() {
   const [specialty, setSpecialty] = useState("");
   const [school, setSchool] = useState("");
   const [gpa, setGpa] = useState("");
-  const [hub, setHub] = useState("");
+  const [hub, setHub] = useState("webdev");
   const [message, setMessage] = useState("");
 
-  const [showSuccess, setShowSuccess] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   function handleRegister(e) {
@@ -43,13 +42,16 @@ function Register() {
     })
       .then(function (response) {
         if (response.status === 201) {
-          setShowSuccess("Success!!!");
+          alert("Successfully Registered!!!");
           setIsLoading(false);
+          window.location.reload();
         }
       })
       .catch(function (error) {
         setIsLoading(false);
-        setShowSuccess("Failed!!! Re-submit the form");
+        alert(
+          "Failed to register! Make sure the name, email or phone number have not been used to register previously"
+        );
         console.log(error);
       });
   }
@@ -149,7 +151,6 @@ function Register() {
         />
       </div>
 
-      <div className="success">{showSuccess}</div>
       <button className="btn" onClick={handleRegister}>
         {isLoading ? "Registering..." : "Register"}
       </button>
