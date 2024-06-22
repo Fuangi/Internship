@@ -8,7 +8,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
-
         <Route path="interns" element={<View />} />
       </Routes>
     </BrowserRouter>
