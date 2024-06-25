@@ -13,6 +13,12 @@
 .header {
   display: flex;
   background-color: white;
+  gap: 40px;
+  padding: 7px;
+
+  & h2 {
+    font-weight: 500;
+  }
 }
 
 // FOOTER
@@ -72,9 +78,12 @@ p {
   padding: 5px;
 }
 
-ol li {
-  font-size: 16px;
-  padding: 4px;
+ol {
+  padding-left: 10px;
+  & li {
+    font-size: 20px;
+    padding: 4px;
+  }
 }
 
 /* FORM */

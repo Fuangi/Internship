@@ -8,7 +8,7 @@ function Homepage() {
       <Header />
       <div className="landing-content">
         <div className="landing-text">
-          <h1 className="heading">Welcome to LSS...</h1>
+          <h1 className="heading">Welcome to LSS</h1>
           <h2>Guides for filling the form</h2>
 
           <p>
@@ -19,7 +19,7 @@ function Homepage() {
             <li>Web Development -- HTML, CSS, JS & MySQL </li>
             <li>DevOps I -- Git - Jenkins</li>
             <li>Devops II -- Cloud Computing - Jira</li>
-            <li>React Bootcamp -- Advanced Web Devekopment</li>
+            <li>React Bootcamp -- Advanced Web Development</li>
             <li>W-Language Programming</li>
           </ol>
         </div>
