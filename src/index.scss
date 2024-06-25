@@ -9,6 +9,20 @@
   box-sizing: border-box;
 }
 
+// HEADER
+.header {
+  display: flex;
+  background-color: white;
+}
+
+// FOOTER
+.footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
 /* REGISTRATION FORM */
 
 .register {
@@ -18,8 +32,6 @@
 /* From projects */
 
 .landing-page {
-  height: 100dvh;
-  padding-top: 20px;
   background: linear-gradient(
       #1015227f,
       #1419296e,
@@ -35,6 +47,7 @@
 .landing-content {
   display: flex;
   justify-content: center;
+  padding: 30px 0;
 }
 
 /* landing text content */

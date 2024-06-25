@@ -1,8 +1,11 @@
+import Footer from "./Footer";
+import Header from "./Header";
 import Register from "./Register";
 
 function Homepage() {
   return (
     <div className="landing-page">
+      <Header />
       <div className="landing-content">
         <div className="landing-text">
           <h1 className="heading">Welcome to LSS...</h1>
@@ -22,6 +25,7 @@ function Homepage() {
         </div>
         <Register />
       </div>
+      <Footer />
     </div>
   );
 }
