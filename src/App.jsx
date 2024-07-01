@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="interns" element={<View />} />
+        <Route path="bye" element={<View />} />
       </Routes>
     </BrowserRouter>
   );

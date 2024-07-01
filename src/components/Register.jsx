@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+// import { useNavigate } from "react-router-dom";
 
 function Register() {
   const [name, setName] = useState("");
@@ -12,6 +13,7 @@ function Register() {
   const [message, setMessage] = useState("");
 
   const [isLoading, setIsLoading] = useState(false);
+  // const navigate = useNavigate();
 
   function handleRegister(e) {
     e.preventDefault();
@@ -36,21 +38,21 @@ function Register() {
     // Add the message when sending it so the above should not be disrupted
     axios({
       method: "POST",
-      // url: "http://localhost:4000/internship",
-      url: "https://internship-backend-ediw.onrender.com",
+      url: "http://localhost:4000/internship",
+      // url: "https://internship-backend-ediw.onrender.com",
       data: intern,
     })
       .then(function (response) {
         if (response.status === 201) {
           alert("Successfully Registered!!!");
           setIsLoading(false);
-          window.location.reload();
+          // navigate("/bye");
         }
       })
       .catch(function (error) {
         setIsLoading(false);
         alert(
-          "Failed to register! Make sure the name, email or phone number have not been used to register previously"
+          "Failed to register! Make sure the name, email or phone number have not been used to register previously or try again later"
         );
         console.log(error);
       });
@@ -72,7 +74,7 @@ function Register() {
       <div className="input-field">
         <label htmlFor="">Email</label>
         <input
-          type="text"
+          type="email"
           name="email"
           required={true}
           id="email"
@@ -151,8 +153,12 @@ function Register() {
         />
       </div>
 
-      <button className="btn" onClick={handleRegister} disabled={isLoading}>
-        {isLoading ? "Registering..." : "Register"}
+      <button
+        className="btn"
+        onClick={handleRegister}
+        disabled={isLoading === true}
+      >
+        {isLoading === true ? "Registering..." : "Register"}
       </button>
     </form>
   );

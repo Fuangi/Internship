@@ -13,7 +13,8 @@
 .header {
   display: flex;
   background-color: white;
-  gap: 40px;
+  justify-content: center;
+  gap: 20px;
   padding: 7px;
 
   & h2 {
@@ -25,7 +26,7 @@
 .footer {
   background-color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: 20px;
 }
 
@@ -150,9 +151,10 @@ option {
   .register {
     width: 100%;
   }
+
   .landing-content {
     min-height: 100dvh;
-    padding: 0 20px;
+    padding: 20px 20px;
     flex-direction: column;
   }
   .landing-text {
@@ -160,7 +162,8 @@ option {
     width: 100%;
   }
   .heading {
-    font-size: 2.5em;
+    font-size: 30px;
+    font-weight: 700;
   }
   form {
     border-radius: 0 0 12px 12px;
