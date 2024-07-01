@@ -38,8 +38,8 @@ function Register() {
     // Add the message when sending it so the above should not be disrupted
     axios({
       method: "POST",
-      url: "http://localhost:4000/internship",
-      // url: "https://internship-backend-ediw.onrender.com/internship",
+      // url: "http://localhost:4000/internship",
+      url: "https://internship-backend-ediw.onrender.com/internship",
       data: intern,
     })
       .then(function (response) {
