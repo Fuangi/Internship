@@ -39,7 +39,7 @@ function Register() {
     axios({
       method: "POST",
       // url: "http://localhost:4000/internship"
-      url: "https://internship-backend-ediw.onrender.com",
+      url: "https://internship-backend-ediw.onrender.com/internship",
       data: intern,
     })
       .then(function (response) {
