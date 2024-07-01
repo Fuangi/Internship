@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import "./index.scss";
 import View from "./components/View";
+import Thanks from "./components/Thanks";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="interns" element={<View />} />
-        <Route path="bye" element={<View />} />
+        <Route path="bye" element={<Thanks />} />
       </Routes>
     </BrowserRouter>
   );

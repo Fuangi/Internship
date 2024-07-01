@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
   const [name, setName] = useState("");
@@ -9,11 +9,11 @@ function Register() {
   const [specialty, setSpecialty] = useState("");
   const [school, setSchool] = useState("");
   const [gpa, setGpa] = useState("");
-  const [hub, setHub] = useState("webdev");
+  const [hub, setHub] = useState("webDev");
   const [message, setMessage] = useState("");
 
   const [isLoading, setIsLoading] = useState(false);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   function handleRegister(e) {
     e.preventDefault();
@@ -38,15 +38,15 @@ function Register() {
     // Add the message when sending it so the above should not be disrupted
     axios({
       method: "POST",
-      // url: "http://localhost:4000/internship"
-      url: "https://internship-backend-ediw.onrender.com/internship",
+      url: "http://localhost:4000/internship",
+      // url: "https://internship-backend-ediw.onrender.com/internship",
       data: intern,
     })
       .then(function (response) {
         if (response.status === 201) {
-          alert("Successfully Registered!!!");
           setIsLoading(false);
-          // navigate("/bye");
+          alert("Successfully registered");
+          navigate("/bye");
         }
       })
       .catch(function (error) {

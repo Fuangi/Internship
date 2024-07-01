@@ -1,8 +1,11 @@
 function Thanks() {
   return (
-    <div className="goodbye">
-      <h2>Successfully Registered!</h2>
-      <p>We&apos;re happy you&apos;ve decided to join us. See you there...</p>
+    <div className="thanks">
+      <h2>Thank you for joining us!!</h2>
+      <p>We&apos;re happy to have you on board 👍.</p>
+      <p>See you on the 25th of July!</p>
+
+      <h5>LSS Engineers</h5>
     </div>
   );
 }
