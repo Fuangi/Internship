@@ -6,7 +6,7 @@ function Header() {
         style={{ height: 50, width: 50, borderRadius: "100%" }}
       />
 
-      <h2>Landmark Software Solutions</h2>
+      <h2>LSS</h2>
     </header>
   );
 }

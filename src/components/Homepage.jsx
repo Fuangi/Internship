@@ -8,7 +8,7 @@ function Homepage() {
       <Header />
       <div className="landing-content">
         <div className="landing-text">
-          <h1 className="heading">Welcome to LSS</h1>
+          <h1 className="heading">Welcome to Landmark Software Solutions</h1>
           <h2>Guides for filling the form</h2>
 
           <p>

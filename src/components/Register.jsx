@@ -32,7 +32,6 @@ function Register() {
       }
     }
     intern = { ...intern, message };
-    console.log(intern);
     setIsLoading(true);
     // Add the message when sending it so the above should not be disrupted
     axios({
@@ -152,7 +151,7 @@ function Register() {
         />
       </div>
 
-      <button className="btn" onClick={handleRegister}>
+      <button className="btn" onClick={handleRegister} disabled={isLoading}>
         {isLoading ? "Registering..." : "Register"}
       </button>
     </form>
