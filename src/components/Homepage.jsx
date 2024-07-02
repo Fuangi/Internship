@@ -21,7 +21,12 @@ function Homepage() {
             <li>Devops II -- Cloud Computing - Jira</li>
             <li>React Bootcamp -- Advanced Web Development</li>
             <li>W-Language Programming</li>
-            <li className="biz">
+
+            <h4 className="biz">
+              Landmark School of Business and Social Management Special Bootcamp
+              2024
+            </h4>
+            <li>
               Digital Transformation and Financial Empowerment in the Global
               Economy
             </li>

@@ -85,12 +85,14 @@ ol {
     font-size: 20px;
     padding: 4px;
   }
+}
 
-  & .biz {
-    margin-top: 20px;
-    border-top: 3px dashed white;
-    padding-top: 5px;
-  }
+.biz {
+  margin-top: 20px;
+  border-top: 3px dashed white;
+  padding-top: 5px;
+  font-size: 25px;
+  text-align: center;
 }
 
 /* FORM */

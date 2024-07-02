@@ -8,8 +8,8 @@ function View() {
   useEffect(function () {
     axios({
       method: "GET",
-      // url: "https://internship-backend-ediw.onrender.com/internship",
-      url: "http://localhost:4000/internship",
+      url: "https://internship-backend-ediw.onrender.com/internship",
+      // url: "http://localhost:4000/internship",
     })
       .then(function (res) {
         setInterns(res.data.data.interns);
@@ -21,8 +21,8 @@ function View() {
 
   function handleSort(field) {
     axios({
-      url: `http://localhost:4000/internship/?sort=${field}`,
-      // url: `https://internship-backend-ediw.onrender.com/internship/?sort=${field}`,
+      // url: `http://localhost:4000/internship/?sort=${field}`,
+      url: `https://internship-backend-ediw.onrender.com/internship/?sort=${field}`,
       method: "get",
     })
       .then(function (res) {
