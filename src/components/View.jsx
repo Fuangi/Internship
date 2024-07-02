@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import InternTable from "./InternTable";
 
 function View() {
   const [interns, setInterns] = useState([]);
@@ -7,8 +8,8 @@ function View() {
   useEffect(function () {
     axios({
       method: "GET",
-      url: "https://internship-backend-ediw.onrender.com/internship",
-      // url: "http://localhost:4000/internship",
+      // url: "https://internship-backend-ediw.onrender.com/internship",
+      url: "http://localhost:4000/internship",
     })
       .then(function (res) {
         setInterns(res.data.data.interns);
@@ -20,8 +21,8 @@ function View() {
 
   function handleSort(field) {
     axios({
-      // url: `http://localhost:4000/internship/?sort=${field}`,
-      url: `https://internship-backend-ediw.onrender.com/internship/?sort=${field}`,
+      url: `http://localhost:4000/internship/?sort=${field}`,
+      // url: `https://internship-backend-ediw.onrender.com/internship/?sort=${field}`,
       method: "get",
     })
       .then(function (res) {
@@ -67,28 +68,18 @@ function View() {
             <th>School</th>
             <th>GPA</th>
             <th>Chosen Hub</th>
+            <th className="onDownload">Message</th>
           </tr>
         </thead>
 
         <tbody>
           {interns?.length > 0 ? (
             interns.map((intern, i) => {
-              return (
-                <tr key={intern._id}>
-                  <td>{i + 1}</td>
-                  <td>{intern.name}</td>
-                  <td>{intern.email}</td>
-                  <td>{intern.phone}</td>
-                  <td>{intern.specialty}</td>
-                  <td>{intern.school}</td>
-                  <td>{intern.gpa}</td>
-                  <td>{intern.hub}</td>
-                </tr>
-              );
+              return <InternTable key={i} i={i} intern={intern} />;
             })
           ) : (
             <tr>
-              <td colSpan={8}>
+              <td colSpan={9}>
                 No Interns found in the database. Please try again later
               </td>
             </tr>

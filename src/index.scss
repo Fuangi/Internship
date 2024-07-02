@@ -215,7 +215,7 @@ option {
   & .interns-table {
     border: 1px solid grey;
     border-collapse: collapse;
-    width: 90%;
+    width: 95%;
     margin: auto;
     margin-top: 15px;
   }
@@ -230,6 +230,32 @@ option {
       padding: 5px;
       background-color: rgba(181, 55, 97, 0.9);
       color: white;
+    }
+  }
+
+  // THe td that contains the message
+  & .message:hover {
+    cursor: pointer;
+    content: "Click to open or close the message";
+  }
+
+  & .active {
+    background-color: rgba(181, 55, 97, 0.5);
+  }
+
+  & .view-message {
+    background-color: rgba(181, 55, 97, 0.2);
+
+    & td {
+      padding: 0;
+    }
+
+    & h4 {
+      padding: 5px;
+    }
+
+    & p {
+      font-size: 15px;
     }
   }
 }
