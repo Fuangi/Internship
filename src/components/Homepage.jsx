@@ -21,6 +21,10 @@ function Homepage() {
             <li>Devops II -- Cloud Computing - Jira</li>
             <li>React Bootcamp -- Advanced Web Development</li>
             <li>W-Language Programming</li>
+            <li className="biz">
+              Digital Transformation and Financial Empowerment in the Global
+              Economy
+            </li>
           </ol>
         </div>
         <Register />

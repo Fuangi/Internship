@@ -134,11 +134,12 @@ function Register() {
           value={hub}
           onChange={(e) => setHub(e.target.value)}
         >
-          <option value="webDev">Web Development I</option>
+          <option value="webDev">Web Development</option>
           <option value="devops1">DevOps I</option>
           <option value="devops2">DevOps II</option>
           <option value="react">React Bootcamp</option>
           <option value="wLang">W-Language Programming</option>
+          <option value="digitalTrans">Digital Transformation</option>
         </select>
       </div>
       <div className="input-field">
