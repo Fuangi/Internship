@@ -24,7 +24,7 @@ function Homepage() {
 
             <h4 className="biz">
               Landmark School of Business and Social Management Special Bootcamp
-              2024
+              {new Date().getFullYear()}
             </h4>
             <li>
               Digital Transformation and Financial Empowerment in the Global
