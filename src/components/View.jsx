@@ -22,7 +22,7 @@ function View() {
   function handleSort(field) {
     axios({
       // url: `http://localhost:4000/internship/?sort=${field}`,
-      url: `https://internship-backend-ediw.onrender.com/internship/?sort=${field}`,
+      url: `https://internship-backend-7p5r.onrender.com/internship/?sort=${field}`,
       method: "get",
     })
       .then(function (res) {
